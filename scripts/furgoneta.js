@@ -1,19 +1,18 @@
-import {Vehiculo} from './vehiculo.js';
+import { Vehiculo } from "./vehiculo.js";
 
 export class Furgoneta extends Vehiculo {
-    #pasajeros;
+  #pasajeros;
 
-    constructor(marca,modelo,color,fabricacion,cilindrada,pasajeros){
-        super(marca,modelo,color,fabricacion,cilindrada);
-        this.#pasajeros = pasajeros;
-    }
+  constructor(marca, modelo, color, fabricacion, cilindrada, pasajeros) {
+    super(marca, modelo, color, fabricacion, cilindrada);
+    this.#pasajeros = pasajeros;
+  }
 
-    get pasajeros(){
-        return this.#pasajeros;
-    }
+  get pasajeros() {
+    return this.#pasajeros;
+  }
 
-    set pasajeros(value){
-        this.#pasajeros = value;
-    }
+  set pasajeros(value) {
+    this.#pasajeros = value;
+  }
 }
-
