@@ -24,7 +24,7 @@ export class Vehiculo{
         </br>
         Su color es: ${this.#color}
         <br/>
-        Se fabricó en el año: $ ${this.#fabricacion}
+        Se fabricó en el año: ${this.#fabricacion}
         <br/>
         Cilindrada: ${this.#cilindrada}
         `;
