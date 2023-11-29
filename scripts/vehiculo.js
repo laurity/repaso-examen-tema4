@@ -1,4 +1,6 @@
-class Vehiculo{
+import { mostrarResultado } from "./main.js";
+
+export class Vehiculo{
     #marca; //Con la # decimos que es private
     #modelo;
     #color;
@@ -12,11 +14,6 @@ class Vehiculo{
         this.#color = color;
         this.#fabricacion =fabricacion;
         this.#cilindrada = cilindrada;
-    }
-
-    //Constructor por defecto o sin parámetros
-    constructor(){
-
     }
 
     mostrarDatos(){
@@ -38,15 +35,15 @@ class Vehiculo{
     }
     acelerar(velocidad){
         const mensaje = `<br/>Se ha acelerado hasta: ${velocidad}`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
     arrancar(){
         const mensaje = `<br/> EL coche ${this.#marca}, ${this.#modelo}, de color ${this.#color}, ha arrancado`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
     frenar(){
         const mensaje = `<br/> EL coche ${this.#marca}, ${this.#modelo}, de color ${this.#color}, ha parado`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
     get marca(){
         return this.#marca;

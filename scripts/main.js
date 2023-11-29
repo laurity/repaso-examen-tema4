@@ -15,7 +15,7 @@ export function mostrarResultado(mensaje){
 
 const vehiculo1 = new Vehiculo('BMW', 'z4', 'Rojo', 1992, '2400');
 mostrarResultado('-- Vehículo 1 --'); 
-vehiculo1.mostrarResultado();
+vehiculo1.mostrarDatos();
 vehiculo1.arrancar();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
