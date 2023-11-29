@@ -14,3 +14,19 @@
     /*Hacer que la imagen esté fija*/
     background-attachment: fixed ;
 }
+
+@keyframes moverImagen {
+   from {
+        transform: translateX(-100);
+   } to{
+        transform: translateX(1000%);
+   }
+}
+
+#miCochecito{
+    width: 150px;
+    height: 100px;
+    background-image: url('../assets/imgs/coche-deportivo.png');
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
+}
