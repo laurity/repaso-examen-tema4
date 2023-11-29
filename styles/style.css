@@ -1,0 +1,16 @@
+  @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+  p{
+    color: black;
+    font-family: 'Vina Sans';
+  }
+
+  body{
+    background-image: url('../assets/imgs/fondo.jpg');
+    /*Cubre toda el área del body*/
+    background-size:cover ;
+    /*Evitar que la imagen se repita*/
+    background-repeat: no-repeat;
+    /*Hacer que la imagen esté fija*/
+    background-attachment: fixed ;
+}
