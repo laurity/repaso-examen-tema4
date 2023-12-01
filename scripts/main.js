@@ -37,6 +37,7 @@ localStorage.setItem('vehiculo', JSON.stringify(vehiculoObject));
 console.log(localStorage.getItem('vehiculo'));
 
 //Imprimimos por consola el JSON
+//De JSON a objeto --> parte
 console.log(JSON.parse(localStorage.getItem('vehiculo')));
 
 
@@ -60,3 +61,13 @@ todoterreno1.arrancar();
 todoterreno1.acelerar(150);
 todoterreno1.frenar();
 console.log(todoterreno1.marca)
+
+//Generar una variable de tipo Object con POO
+const todoterrenoObject = {
+    marca:todoterreno1.marca ,
+    modelo:todoterreno1.modelo ,
+    color:todoterreno1.color ,
+    fabricacion:todoterreno1.fabricacion ,
+    cilindrada:todoterreno1.cilindrada ,
+    traccion:todoterreno1.traccion
+}
